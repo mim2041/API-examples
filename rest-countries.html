@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Countries</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        #countries-container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Let's Explore Countries</h1>
+    </header>
+    <main>
+        <section>
+            <input placeholder="Enter a country name" type="text" name="" id="input-country">
+            <button onclick="searchCountry()">search</button>
+        </section>
+        <section id="show-country">
+            <h1>searched Country</h1>
+        </section>
+        
+        <h1>All countries</h1>
+        <section id="countries-container" class="">
+        </section>
+    </main>
+    <script src="js/rest-countries.js"></script>
+</body>
+</html>
